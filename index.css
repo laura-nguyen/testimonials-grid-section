@@ -104,6 +104,7 @@ main {
   flex-direction: column;
   gap: 1.5rem;
   height: 100%;
+  box-shadow: 0 0 0.5rem 0.5rem hsl(210, 46%, 95%);
 }
 .card__content--light {
   color: hsl(0, 0%, 100%);
