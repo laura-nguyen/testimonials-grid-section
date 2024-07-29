@@ -72,7 +72,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 1.5rem;
 }
 @media (min-width: 725px) {
@@ -83,6 +82,7 @@ main {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "card--1 card--2" "card--3 card--4" "card--5 card--5";
     gap: 1.5rem;
+    align-items: flex-start;
   }
 }
 @media (min-width: 1440px) {
@@ -173,6 +173,16 @@ main {
 .card--5 {
   grid-area: card--5;
   background-color: hsl(0, 0%, 100%);
+}
+@media (min-width: 725px) {
+  .card--5 {
+    height: auto;
+  }
+}
+@media (min-width: 1440px) {
+  .card--5 {
+    height: 100%;
+  }
 }
 
 .attribution {
