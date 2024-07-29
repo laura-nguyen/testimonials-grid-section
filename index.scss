@@ -4,16 +4,26 @@
 @use "styles/partials/global" as *;
 
 main {
-  margin: 4rem auto;
+  margin: 4rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  max-width: calc(375px - (1.5rem * 2));
+  // max-width: calc(375px - (1.5rem * 2));
 
-  @include desktop {
+  @include tablet {
+    margin: 4rem 2.5rem;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "card--1 card--2"
+      "card--3 card--4"
+      "card--5 card--5";
+    gap: 1.5rem;
+  }
+  @include desktop {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
