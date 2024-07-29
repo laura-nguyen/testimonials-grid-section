@@ -1,0 +1,14 @@
+@use "variables" as *;
+@use "typography" as *;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
